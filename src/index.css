@@ -126,3 +126,8 @@ a:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.icon-class {
+  width: 18px;
+  height: 18px;
+}
+

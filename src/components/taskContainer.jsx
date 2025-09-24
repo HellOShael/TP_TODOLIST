@@ -2,15 +2,32 @@ import { Footer } from "./footer/footer";
 import { Header } from "./header/header";
 import { TaskInput } from "./taskInput/taskInput";
 import { TaskList } from "./taskList/taskList";
+import { useTaskManager } from "../model/useTaskManager";
 
-// Ce composant est utilisé pour afficher l'intégralité de la fonctionalité de Tache.
 export const TaskContainer = () => {
+  const {
+    tasks,
+    addTask,
+    deleteTask,
+    toggleTask,
+    undoTask,
+    countRemaining,
+    totalTasksDone,
+  } = useTaskManager();
+
   return (
     <main>
       <Header />
-      <TaskInput />
-      <TaskList />
-      <Footer />
+      <TaskInput onAdd={addTask} />
+      <TaskList
+        tasks={tasks}
+        onToggle={toggleTask}
+        onDelete={deleteTask}
+        onUndo={undoTask}
+        remaining={countRemaining()}
+      />
+      <Footer totalDone={totalTasksDone} />
     </main>
   );
 };
+
