@@ -56,7 +56,7 @@ Le pattern est donc présent et complet.
 
 Chaque tâche possède un état “done”, et l’interface s’adapte à cet état : texte barré, couleurs différentes, boutons différents, …
 
-⇒Le système peut passer d’un état à un autre (non fait → fait → annulé) (=undo).
+⇒ Le système peut passer d’un état à un autre (non fait → fait → annulé) (=undo).
 
 Le pattern est donc, pour résumer, utilisé de façon simple mais il est complet ou en tout cas “fidèle à sa définition”.
 
