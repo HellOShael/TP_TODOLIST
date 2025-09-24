@@ -44,13 +44,13 @@ Chaque action utilisateur (ajouter, supprimer, terminer, annuler) est encapsulé
 
 Le pattern est présent et complet, avec une séparation de la logique.
 
----
 
 ## Observer : présent
 
 “Footer” et “TaskList” observent les changements dans l’état des tâches pour afficher dynamiquement le nombre de tâches restantes ou terminées.
 
 Le pattern est donc présent et complet.
+
 
 ## State : présent
 
